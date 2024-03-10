@@ -1,0 +1,194 @@
+body {
+    background-image: url("bg\ iamge1.jpg");
+    background-repeat: no-repeat;
+    background-size: 1299px 750px ;
+}
+.container p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 39px;
+    position: absolute;
+    left: 120px;
+    top: 185px;
+    font-weight: bolder;
+}
+.container img{
+    position: absolute;
+    width: 27px;
+    top: 100px;
+    left: 125px;
+}
+.container .Viewer{
+    position: absolute;
+    top: 98px;
+    font-size: 19.99px;
+    left: 160px;
+    font-family:unset;
+    color:darkgrey;
+}
+/* .input-username input {
+    position: absolute;
+    width: 410px;
+    left: 120px;
+    top: 350px;
+    height: 50px;
+    border-radius: 8px;
+    background-color:#032d6c;
+}
+.input-username input:hover{
+    background-color:transparent;
+    color: #fff;
+    font-size: larger;
+} */
+input[type=text] {
+    border: none;        /* Remove default borders */
+    padding: 4px 8px;
+    border-radius: 4px; /* Sadly outline does not round! therefore...*/
+    position: absolute;
+    top: 380px;
+    left: 120px;
+    width: 390px;
+    height: 45px;
+    background-color: transparent;
+  }
+input[type=text]:focus{
+    outline: none;      /* Remove default outline and use border or box-shadow */
+    box-shadow: 0 0 0 3px rgb(60, 158, 238); /* Full freedom. (works also with border-radius) */
+
+  }
+  input[type=text]{
+    color: #fff;
+  }
+  ::placeholder {
+    color: rgb(87, 85, 85);
+    opacity: 1; /* Firefox */
+    font-size: 18px;
+    /* font-family; */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12-18 */
+    color: red;
+  }
+.input-username .btn{
+    position: absolute;
+    top: 187px;
+    /* left: 275px;      */
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+        left: calc(50% - 60px);
+}
+.input-username .btn:hover{
+    background-color: transparent   ;
+    color: #ffffff;
+    font-size:large;
+}
+
+button {
+    /* padding: 8px 16px; */
+    cursor: pointer;
+}
+
+
+
+/* For screens smaller than 576px (e.g., phones) */
+@media (max-width: 575.98px) {
+    .container p {
+        font-size: 40px;
+        left: 20px;
+        top: 93px;
+    }
+    .container img {
+        width: 24px;
+        top: 50px;
+        left: 25px;
+    }
+    .container .Viewer {
+        top: 48px;
+        left: 60px;
+        font-size: 14px;
+    }
+    input[type=text] {
+        top: 345px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: 35px;
+    }
+    .input-username .btn {
+            top: calc(65% + 3px); /* Adjust this value as needed */
+            left: 70px;
+        }
+}
+
+/* For screens between 576px and 767.98px (e.g., small tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container p {
+        font-size: 25px;
+        left: 40px;
+        top: 100px;
+    }
+    .container img {
+        width: 25px;
+        top: 70px;
+        left: 45px;
+    }
+    .container .Viewer {
+        top: 68px;
+        left: 80px;
+        font-size: 16px;
+    }
+    input[type=text] {
+        top: 320px;
+        left: 40px;
+        width: calc(100% - 40px);
+        height: 40px;
+    }
+    .input-username .btn {
+        position: absolute;
+        top: 400px;
+        left: calc(50% - 60px);
+    }
+    html, body {
+        overflow-y: auto;
+    }
+}
+
+/* For screens between 768px and 991.98px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container p {
+        font-size: 30px;
+        left: 80px;
+        top: 120px;
+    }
+    .container img {
+        width: 30px;
+        top: 90px;
+        left: 85px;
+    }
+    .container .Viewer {
+        top: 88px;
+        left: 120px;
+        font-size: 18px;
+    }
+    input[type=text] {
+        top: 360px;
+        left: 80px;
+        width: calc(100% - 40px);
+        height: 45px;
+    }
+    .input-username .btn {
+        top: 122px;
+        left: calc(50% - 60px);
+    }
+}
+
+/* For screens between 992px and 1199.98px (e.g., desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Adjust styles for smaller desktops */
+}
+
+/* For screens 1200px and larger (e.g., large desktops) */
+@media (min-width: 1200px) {
+    /* Adjust styles for large desktops */
+}
+
